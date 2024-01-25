@@ -29,6 +29,7 @@ img {
 /* ------------------------------------------------------- */
 
 body {
+  background: #06071b;
   font-family: 'Inter', sans-serif;
   color: #fff;
 }
@@ -38,9 +39,17 @@ body {
   margin: 0 auto;
 }
 
+.icon {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
 /* ======================= HEADER ============================= */
 
 .header {
+  position: relative;
+  top: 20px;
   height: 62px;
   display: flex;
   align-items: center;
@@ -74,6 +83,9 @@ body {
 
 .hero-section {
   background-color: #06071b;
+}
+
+.hero-container {
 }
 
 .hero-title {
