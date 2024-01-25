@@ -48,8 +48,9 @@ body {
 /* ======================= HEADER ============================= */
 
 .header {
-  position: relative;
-  top: 20px;
+  margin-top: 20px;
+  /* position: sticky;
+  top: 20px; */
   height: 62px;
   display: flex;
   align-items: center;
@@ -82,10 +83,12 @@ body {
 /* ============================= HERO ======================== */
 
 .hero-section {
-  background-color: #06071b;
+  height: 568px;
+  background: url(../img/mobail-img/img-bg_hero.png) center;
 }
 
 .hero-container {
+  padding-top: 100px;
 }
 
 .hero-title {
