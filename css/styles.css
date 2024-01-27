@@ -29,7 +29,6 @@ img {
 /* ------------------------------------------------------- */
 
 body {
-  background: #06071b;
   font-family: 'Inter', sans-serif;
   color: #fff;
 }
@@ -48,13 +47,12 @@ body {
 /* ======================= HEADER ============================= */
 
 .header {
-  margin-top: 20px;
-  /* position: sticky;
-  top: 20px; */
-  height: 62px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #06071b;
+}
+
+.header-section {
+  position: relative;
+  top: 20px;
   background: linear-gradient(
     90deg,
     rgba(0, 197, 235, 0.3) -1.97%,
@@ -62,8 +60,10 @@ body {
   );
 }
 
-.header-section {
+.header-container {
+  height: 62px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -84,7 +84,7 @@ body {
 
 .hero-section {
   height: 568px;
-  background: url(../img/mobail-img/img-bg_hero.png) center;
+  background: url(../img/mobail-img/img-bg_hero.png) #06071b center no-repeat;
 }
 
 .hero-container {
@@ -106,9 +106,22 @@ body {
 }
 
 .hero-list {
-  margin: 0 0 40px 22px;
+  margin-bottom: 40px;
   font-size: 12px;
   font-weight: 400;
+}
+
+.hero-item {
+  display: flex;
+}
+
+.hero-item::before {
+  content: '';
+  margin-right: 4px;
+  display: flex;
+  min-width: 18px;
+  height: 18px;
+  background: url(/img/icons/icons-arrow-hero.svg);
 }
 
 .hero-item:not(:last-child) {
@@ -116,7 +129,7 @@ body {
 }
 
 .hero-item:nth-child(2n) {
-  width: 219px;
+  width: 240px;
 }
 
 .hero-button {
@@ -125,14 +138,32 @@ body {
   padding: 12px 60px;
   border: none;
   border-radius: 5px;
-  background: var(
-    --LINEAR,
-    linear-gradient(90deg, #00c5eb -1.97%, #b544fe 89.43%)
-  );
+  background: linear-gradient(90deg, #00c5eb -1.97%, #b544fe 89.43%);
   cursor: pointer;
 
   color: #fff;
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
+}
+
+/*===============================FEATURES=========================*/
+
+.features {
+  background: url(/img/mobail-img/Vector\ 2.png) top no-repeat,
+    url(/img/mobail-img/Vector\ 1.png) bottom no-repeat;
+}
+.title-features {
+}
+.text-features {
+}
+.img-features {
+}
+.features-lest {
+}
+.features-item {
+}
+.features-item-title {
+}
+.features-item-subtitle {
 }
