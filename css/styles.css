@@ -34,7 +34,9 @@ body {
 }
 
 .container {
-  max-width: 280px;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -152,18 +154,175 @@ body {
 .features {
   background: url(/img/mobail-img/Vector\ 2.png) top no-repeat,
     url(/img/mobail-img/Vector\ 1.png) bottom no-repeat;
+
+  color: #000;
 }
+
+.features-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .title-features {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
 }
+
 .text-features {
+  margin: 40px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
 }
+
 .img-features {
 }
-.features-lest {
+
+.features-list {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
 }
+
 .features-item {
+  padding-left: 40px;
+  position: relative;
 }
+
+.features-item::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/icons/icon-gear.svg);
+  background-size: cover;
+}
+
 .features-item-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42857;
 }
+
 .features-item-subtitle {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/*========================== WATCH ========================*/
+.watch {
+  background-color: #000;
+}
+
+.container-watch {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background: url(../img/mobail-img/bg-img-section-watch.png) bottom no-repeat;
+}
+
+.container {
+}
+
+.watch-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.watch-text {
+  margin: 24px 0;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-platform {
+}
+
+.image-watch-phone {
+}
+
+/*========================= TEAM ===========================*/
+
+.team {
+  color: #000;
+}
+
+.container-team {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container {
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.team-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.item-wrap {
+  background-color: #000;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 15px;
+  background: linear-gradient(
+    318deg,
+    rgba(0, 196, 235, 0.301) 0%,
+    rgba(180, 68, 254, 0.301) 100%
+  );
+}
+
+.card-team {
+  /* width: 258px;
+  margin: 0 auto; */
+}
+
+.card-title {
+  margin: 24px 12px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.card-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71429;
+  text-align: center;
+  color: #fff;
 }
