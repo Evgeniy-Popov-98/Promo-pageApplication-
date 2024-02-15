@@ -50,6 +50,7 @@ body {
 
 .header {
   background-color: #06071b;
+  /* border: none; */
 }
 
 .header-section {
@@ -274,11 +275,13 @@ body {
 }
 
 .team-title {
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
 }
 
 .team-text {
+  margin: 24px 0 28px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.42857;
@@ -290,8 +293,10 @@ body {
   flex-direction: column;
   gap: 24px;
 }
+
 .item-wrap {
-  background-color: #000;
+  background-color: rgba(6, 7, 27, 0.8);
+  border-radius: 15px;
 }
 
 .team-item {
@@ -300,19 +305,18 @@ body {
   padding: 16px;
   border-radius: 15px;
   background: linear-gradient(
-    318deg,
+    310deg,
     rgba(0, 196, 235, 0.301) 0%,
     rgba(180, 68, 254, 0.301) 100%
   );
 }
 
 .card-team {
-  /* width: 258px;
-  margin: 0 auto; */
+  border-radius: 10px;
 }
 
 .card-title {
-  margin: 24px 12px;
+  margin: 24px 0 12px 0;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -325,4 +329,57 @@ body {
   line-height: 1.71429;
   text-align: center;
   color: #fff;
+}
+
+/*================================= Customer ===================*/
+
+.customer {
+  color: #000;
+}
+
+.container-customer {
+}
+
+.container {
+}
+
+.customer-title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.customer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.customer-img {
+  width: 181px;
+  height: 181px;
+}
+
+.customer-subtitle {
+  margin: 20px 0 12px 0;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.customer-subtext {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.customer-text {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
 }
