@@ -23,7 +23,6 @@ ol {
 
 img {
   display: block;
-  width: 100%;
 }
 
 /* ------------------------------------------------------- */
@@ -386,10 +385,111 @@ body {
 
 .customer-text::after {
   content: '';
+  margin: 40px auto;
   display: block;
-  margin: 0 auto;
-  margin-top: 40px;
   width: 76px;
   height: 6px;
   background-color: #06071b;
+}
+
+/*=============== Footer ====================*/
+
+.footer-section {
+  background-color: #06071b;
+}
+
+.footer-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: nowrap; */
+}
+
+.container {
+}
+
+.footer-title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.input {
+  border-radius: 5px;
+  width: 280px;
+  height: 40px;
+  padding: 12px 8px;
+  border: none;
+}
+
+.form-comment {
+  width: 280px;
+  height: 220px;
+}
+
+.button-form {
+  padding: 12px 60px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  border: none;
+}
+
+.footer-subtitle {
+  margin: 40px 0 20px 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-social {
+  margin: 50px 0 40px 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-item {
+}
+
+.social-link {
+}
+
+.contact-list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.contact-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer-сopyright {
 }
