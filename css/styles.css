@@ -47,9 +47,12 @@ body {
 
 /* ======================= HEADER ============================= */
 
+.nav-list {
+  display: none;
+}
+
 .header {
   background-color: #06071b;
-  /* border: none; */
 }
 
 .header-section {
@@ -73,29 +76,58 @@ body {
   font-size: 28px;
   font-weight: 400;
   line-height: normal;
+  color: #fff;
 }
 
 .header-menu {
-  border: none;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  .header-section {
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
   }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container {
+    min-width: 768px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .header-container {
   }
-  .container {
+
+  .nav-container {
   }
   .header-logo {
   }
+
   .header-menu {
+    display: none;
   }
-  .icon-burger-menu {
+
+  .nav-list {
+    margin-left: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
   }
-  .icon {
+
+  .nav-item {
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 12px;
   }
 }
 
