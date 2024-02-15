@@ -82,6 +82,23 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .header-section {
+  }
+  .header-container {
+  }
+  .container {
+  }
+  .header-logo {
+  }
+  .header-menu {
+  }
+  .icon-burger-menu {
+  }
+  .icon {
+  }
+}
+
 /* ============================= HERO ======================== */
 
 .hero-section {
