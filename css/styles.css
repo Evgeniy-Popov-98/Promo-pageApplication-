@@ -246,8 +246,8 @@ body {
 /*===============================FEATURES=========================*/
 
 .features {
-  background: url(/img/mobail-img/Vector\ 2.png) top no-repeat,
-    url(/img/mobail-img/Vector\ 1.png) bottom no-repeat;
+  /* background: url(/img/mobail-img/Vector\ 2.png) top no-repeat,
+    url(/img/mobail-img/Vector\ 1.png) bottom no-repeat; */
 
   color: #000;
 }
@@ -272,6 +272,8 @@ body {
 }
 
 .img-features {
+  width: 100px;
+  height: 200px;
 }
 
 .features-list {
@@ -320,15 +322,26 @@ body {
   }
 
   .title-features {
+    font-size: 24px;
   }
 
   .text-features {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .blok-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .img-features {
+    flex: 0;
   }
 
   .features-list {
+    flex: 1;
   }
 
   .features-item {
