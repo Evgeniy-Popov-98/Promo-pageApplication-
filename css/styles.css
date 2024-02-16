@@ -134,12 +134,13 @@ body {
 /* ============================= HERO ======================== */
 
 .hero-section {
-  height: 568px;
-  background: url(../img/mobail-img/img-bg_hero.png) #06071b center no-repeat;
+  background-color: #06071b;
 }
 
 .hero-container {
   padding-top: 100px;
+  padding-bottom: 130px;
+  background: url(../img/mobail-img/img-bg_hero.png) center no-repeat;
 }
 
 .hero-title {
@@ -157,7 +158,6 @@ body {
 }
 
 .hero-list {
-  margin-bottom: 40px;
   font-size: 12px;
   font-weight: 400;
 }
@@ -179,13 +179,15 @@ body {
   margin-bottom: 8px;
 }
 
-.hero-item:nth-child(2n) {
-  width: 240px;
+@media screen and (max-width: 767px) {
+  .hero-item:nth-child(2n) {
+    width: 240px;
+  }
 }
 
 .hero-button {
   display: block;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   padding: 12px 60px;
   border: none;
   border-radius: 5px;
@@ -199,25 +201,45 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-	.hero-section{
-		bac
-	}
-
+  .hero-section {
+    background-color: #06071b;
+    margin-bottom: 50px;
+  }
 
   .hero-container {
     padding-top: 60px;
+    padding-bottom: 200px;
+    background: url(../img/table-img/hero/hero-decor.png) bottom center
+        no-repeat,
+      url(../img/table-img/hero/hero-phone-bg.png) bottom right no-repeat,
+      url(../img/table-img/hero/hero-gradient.png) top left no-repeat,
+      url(../img/table-img/hero/hero-dig-gradien.png) bottom -20px right -20px
+        no-repeat;
   }
+
   .container {
   }
+
   .hero-title {
+    font-size: 40px;
   }
+
   .hero-text {
+    font-size: 20px;
   }
+
   .hero-list {
   }
+
   .hero-item {
   }
+
+  .hero-item:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
   .hero-button {
+    margin: 62px 0 0 0;
   }
 }
 
