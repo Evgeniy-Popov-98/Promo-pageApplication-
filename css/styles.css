@@ -309,6 +309,38 @@ body {
   font-size: 12px;
 }
 
+@media screen and (min-width: 768px) {
+  .features {
+  }
+
+  .features-container {
+  }
+
+  .container {
+  }
+
+  .title-features {
+  }
+
+  .text-features {
+  }
+
+  .img-features {
+  }
+
+  .features-list {
+  }
+
+  .features-item {
+  }
+
+  .features-item-title {
+  }
+
+  .features-item-subtitle {
+  }
+}
+
 /*========================== WATCH ========================*/
 .watch {
   background-color: #000;
