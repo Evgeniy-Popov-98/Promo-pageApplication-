@@ -458,21 +458,17 @@ body {
   gap: 24px;
 }
 
-.item-wrap {
-  background-color: rgba(6, 7, 27, 0.8);
-  border-radius: 15px;
-}
-
 .team-item {
   display: flex;
   flex-direction: column;
   padding: 16px;
   border-radius: 15px;
   background: linear-gradient(
-    310deg,
-    rgba(0, 196, 235, 0.301) 0%,
-    rgba(180, 68, 254, 0.301) 100%
-  );
+      310deg,
+      rgba(0, 196, 235, 0.301) 0%,
+      rgba(180, 68, 254, 0.301) 100%
+    ),
+    rgba(6, 7, 27, 0.8);
 }
 
 .card-team {
@@ -493,6 +489,43 @@ body {
   line-height: 1.71429;
   text-align: center;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+  }
+  .container-team {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    background: url(../img/table-img/team/wath-top-bg-gradient.png) top -100px right
+        no-repeat,
+      url(../img/table-img/team/wath-bottom-bg-gradient.png) bottom right
+        no-repeat;
+  }
+  .container {
+  }
+  .team-title {
+    font-size: 24px;
+  }
+  .team-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px 32px;
+  }
+  .team-item {
+    width: calc((100% - 32px) / 2);
+  }
+  .card-team {
+  }
+  .card-title {
+  }
+  .card-text {
+  }
 }
 
 /*================================= Customer ===================*/
