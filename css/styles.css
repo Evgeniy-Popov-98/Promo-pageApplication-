@@ -396,8 +396,34 @@ body {
 }
 
 .image-watch-phone {
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .watch {
+  }
+  .container-watch {
+    padding-top: 80px;
+    padding-bottom: 0;
+
+    background: bottom -80px center no-repeat url(../img/table-img/wath-gradient.png);
+    background-size: 60%;
+  }
+  .container {
+  }
+  .watch-title {
+    font-size: 24px;
+  }
+  .watch-text {
+    font-size: 16px;
+  }
+  .icon-container {
+  }
+  .icon-platform {
+  }
+  .image-watch-phone {
+  }
+}
 /*========================= TEAM ===========================*/
 
 .team {
